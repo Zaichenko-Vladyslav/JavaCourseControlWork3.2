@@ -25,10 +25,10 @@
  * 2. Calculate the total salary of a month.
  * 3. Find the highest salary employee.
  * 4. Find he lowest salary employee
- * 5.  The average salary.
+ * 5. The average salary.
  * 6. Who get more salary, part-time or full-time employees?
  *
- * /----------------  Subjects according to your number ------------------
+ * ----------------  Subjects according to your number ------------------
  *
  * 1. Employees.
  * 2. Candies in boxes and by weight.
@@ -36,12 +36,12 @@
  * 4. Sugar packed and by weight.
  * 5. Cafe : standard lunch and ordering.
  * 6. Air fly : low-cost and business-class.
- * 7.  Trip by train: social sitting places and business-class.
+ * 7. Trip by train: social sitting places and business-class.
  * 8. Hotel: only bed  and lux.
  * 9. Taxi: payment for km and for time.
  * 10. Fitness centre:  minimal month subscription and free choice.
  *
- * I was born 14 October 1998, that is why I take variant 4
+ * I was born 14 October 1998, that is why I took variant 4
  *
  */
 
@@ -55,13 +55,13 @@ public class WeightSugar implements ITrading {
     private double pricePerKilo;
     private double weight;
 
-    // default empty constructor
     public WeightSugar() {
+
     }
 
     /*
      * Class constructor with parameters
-     * @param mane String, set name of sugar in the receipt
+     * @param name String, set name of sugar in the receipt
      * @param pricePerKilo double, set sugar price per 1 kilo in the receipt
      * @param weight double, set sugar weight in the receipt
      */
@@ -72,6 +72,7 @@ public class WeightSugar implements ITrading {
     }
 
     // Getters and setters for class WeightSugar
+
     public String getName() {
         return name;
     }
@@ -99,11 +100,10 @@ public class WeightSugar implements ITrading {
     // Method toString() for class WeightSugar
     @Override
     public String toString() {
-        return "\nWeightSugar - '"+ name + '\'' +
+        return "WeightSugar - '"+ name + '\'' +
                 ", Price - " + pricePerKilo + " UAH per kilo" +
                 ", Weight - " + weight + " kilogram";
     }
-
 
     // Method getPrice() for class WeightSugar implemented by ITrading
     @Override
